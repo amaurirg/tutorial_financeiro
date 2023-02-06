@@ -1,0 +1,6 @@
+fastapi==0.89.1
+psycopg2==2.9.5
+SQLAlchemy==2.0.1
+uvicorn==0.20.0
+requests==2.28.2
+alembic==1.9.2
