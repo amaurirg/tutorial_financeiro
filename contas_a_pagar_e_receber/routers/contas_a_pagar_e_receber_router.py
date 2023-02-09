@@ -30,7 +30,7 @@ class ContaPagarReceberEnum(str, Enum):
 class ContaPagarReceberRequest(BaseModel):
     descricao: str = Field(min_length=3, max_length=30)
     valor: Decimal = Field(gt=0)
-    tipo: str = ContaPagarReceberEnum
+    tipo: ContaPagarReceberEnum
 
 
 @router.get("/", response_model=list[ContaPagarReceberResponse])
